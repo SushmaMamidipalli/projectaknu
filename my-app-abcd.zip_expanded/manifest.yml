@@ -1,0 +1,12 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: MyAppabcd
+  buildpack: sdk-for-nodejs
+  command: npm start
+  memory: 256M
+  domain: not-used.net
+  host: not-used
+  services:
+    - my-app-abcd-cloudant-1558169279515
